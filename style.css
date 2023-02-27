@@ -3,6 +3,7 @@ html,body {
   margin: 0%;
   border: none;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 nav ul.nav-bar {
@@ -14,23 +15,68 @@ nav ul.nav-bar {
   align-items: center;
   margin-top: 5%;
   margin-bottom: 5%;
+
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 50%;
+  width: 100%;
   justify-content: center;
-  margin-left:25%;
   list-style: none;
   text-decoration: none;
+  padding-top:180px;
+
 }
 
-h1 {
-  display: flex;
-  justify-content: center;
+.container a img {  
+  width:100%;
+  vertical-align: middle;
+} 
+
+.container p {
+  position: absolute;
+  color:white;
+  font-size:150px;
+  margin-left: 90px;
+  font-family:kepler-3-display-variable;
+  z-index:1;
+
 }
+
+.container .landscape-text {
+  margin-bottom: 109%;
+}
+
+
+
+.container .portraits-text {
+  margin-top:11%;
+
+}
+
+.container .photoshop-text {
+  margin-top: 111%;
+}
+
+.container img {
+  transition: 0.3s;
+}
+
+
+.container img:hover {
+  filter:brightness(50%);
+  z-index:0;
+}  
+
+header {
+  background-color:#eeeeeef3;
+  position:fixed;
+  width: 100%;
+  z-index:1;
+}
+
+
 
 footer {
   margin-top: 10%;
