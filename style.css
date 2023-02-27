@@ -21,6 +21,7 @@ nav ul.nav-bar, .logo-bar {
 
 .logo { /* Requirement-2.C */
   width:100px; /* Requirement-2.9 */
+  margin-right:60px;
 }
 
 .container {
@@ -121,6 +122,7 @@ li a {
 
 div img { /* Requirement-2.F */
   width:40%;
+  max-height: 800px;
 }
 
 .introduction-text,.life-text,.tools {
