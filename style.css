@@ -1,32 +1,36 @@
-html,body {
-  background-color: #eeeeeef3;
+html,body { /* Requirement-2.B */
+  background-color: white; /* Requirement-2.4 */
   margin: 0%;
-  border: none;
-  overflow-x: hidden;
+  border: none; /* Requirement-2.5 */
+  overflow-x: hidden; /* Requirement-2.14 */
   scroll-behavior: smooth;
+  font-family:area-normal; /* Requirement-2.1 */
+
 }
 
-nav ul.nav-bar {
-  display: flex;
+/* Main layout for index page */
+
+nav ul.nav-bar, .logo-bar {
+  display: flex; /* Requirement-2.12 */
   list-style: none;
   text-decoration: none;
   justify-content: center;
-  gap: 10%;
+  gap: 15%;
   align-items: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
+}
 
+.logo { /* Requirement-2.C */
+  width:100px; /* Requirement-2.9 */
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100%; /* Requirement-2.7 */
   justify-content: center;
-  list-style: none;
+  list-style: none; /* Requirement-2.8 */
   text-decoration: none;
-  padding-top:180px;
-
+  margin-top:100px;
 }
 
 .container a img {  
@@ -35,12 +39,13 @@ nav ul.nav-bar {
 } 
 
 .container p {
-  position: absolute;
-  color:white;
-  font-size:150px;
+  position: absolute; /* Requirement-2.15 */
+  color:white; /* Requirement-2.3 */
+  font-size:600%; /* Requirement-2.10 */
   margin-left: 90px;
   font-family:kepler-3-display-variable;
-  z-index:1;
+  z-index:1; /* Requirement-2.17 */
+  margin-top:100px; /* Requirement-2.6 */
 
 }
 
@@ -52,35 +57,35 @@ nav ul.nav-bar {
 
 .container .portraits-text {
   margin-top:11%;
-
 }
 
 .container .photoshop-text {
   margin-top: 111%;
 }
 
-.container img {
+.container img { 
   transition: 0.3s;
 }
 
 
-.container img:hover {
+.container img:hover { /* Requirement-2.E */
   filter:brightness(50%);
   z-index:0;
 }  
 
-header {
-  background-color:#eeeeeef3;
+header { /* Requirement-2.A */
+  background-color:white;
   position:fixed;
   width: 100%;
-  z-index:1;
+  z-index:2;
 }
 
 
 
 footer {
   margin-top: 10%;
-  text-align: center;
+  text-align: center; /* Requirement-2.2 */
+  clear:left; /* Requirement-2.13 */
 }
 
 hr {
@@ -94,13 +99,62 @@ a:link {
 
 a:hover {
   text-decoration: none;
+  color:black;
 }
 
 a:visited {
   text-decoration: none;
-  color:black;
+
 }
 
 a:active {
   text-decoration: none;
+  color:black;
 }
+
+li a {
+  color:gray;
+}
+
+
+/* about-me page */
+
+div img { /* Requirement-2.F */
+  width:40%;
+}
+
+.introduction-text,.life-text,.tools {
+  font-size:25px;
+}
+
+#about-container { /* Requirement-2.D */
+  display: flex;
+  flex-direction:row;
+  margin-top:20%;
+  gap:5%;
+}
+
+/* landscape page */
+
+.landscape-container img {
+  margin-top:20%;
+  float:left; /* Requirement-2.11 */
+}
+
+
+/* photoshop page */
+.photoshop-container {
+  visibility: hidden; /* Requirement-2.16 */
+}
+
+/* required stuff */
+
+details { /* Requirement-2.G */
+  color:red;
+  font-weight:bold;
+}
+
+summary { /* Requirement-2.H */
+  color:#bebdbd;
+}
+
