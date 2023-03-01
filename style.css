@@ -35,8 +35,10 @@ nav ul.nav-bar, .logo-bar {
 }
 
 .container a img {  
-  width:100%;
   vertical-align: middle;
+  width:100%;
+  max-height:100%;
+
 } 
 
 .container p {
@@ -47,11 +49,12 @@ nav ul.nav-bar, .logo-bar {
   font-family:kepler-3-display-variable;
   z-index:1; /* Requirement-2.17 */
   margin-top:100px; /* Requirement-2.6 */
+  
 
 }
 
 .container .landscape-text {
-  margin-bottom: 109%;
+  margin-bottom: 106%;
 }
 
 
