@@ -123,9 +123,11 @@ li a {
 
 /* about-me page */
 
-div img { /* Requirement-2.F */
+#about-container img { /* Requirement-2.F */
   width:40%;
-  max-height: 800px;
+  max-width:400px;
+  max-height:600px;
+
 }
 
 .introduction-text,.life-text,.tools {
