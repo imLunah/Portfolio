@@ -44,7 +44,7 @@ nav ul.nav-bar, .logo-bar {
 .container p {
   position: absolute; /* Requirement-2.15 */
   color:white; /* Requirement-2.3 */
-  font-size:600%; /* Requirement-2.10 */
+  font-size:1000%; /* Requirement-2.10 */
   margin-left: 90px;
   font-family:kepler-3-display-variable;
   z-index:1; /* Requirement-2.17 */
@@ -67,12 +67,11 @@ nav ul.nav-bar, .logo-bar {
   margin-top: 111%;
 }
 
-.container img { 
+.container img, .image-section img { 
   transition: 0.3s;
 }
 
-
-.container img:hover { /* Requirement-2.E */
+.container img:hover, .image-section img:hover { /* Requirement-2.E */
   filter:brightness(50%);
   z-index:0;
 }  
@@ -141,26 +140,36 @@ li a {
   gap:5%;
 }
 
-/* landscape page */
 
-.landscape-container img {
+.landscape-container .image-section, .portraits-container .image-section,.photoshop-container .image-section {
+  display:flex;
+  flex-direction: row;
+  gap:20px;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+/* gap between each image section */
+.portraits-container .image-section, .landscape-container .image-section, .photoshop-container .image-section {
   margin-top:20%;
-  float:left; /* Requirement-2.11 */
 }
 
-
-/* photoshop page */
-.photoshop-container {
-  visibility: hidden; /* Requirement-2.16 */
+.portraits-container img, .landscape-container img, .photoshop-container img {
+  width:500px;
 }
 
-/* required stuff */
+/* .image-section img:active {
+  width: 1000px;
+  border-style: dotted;
+  cursor: pointer;
+} */
 
-details { /* Requirement-2.G */
+
+details { 
   color:red;
   font-weight:bold;
 }
 
-summary { /* Requirement-2.H */
+summary { 
   color:#bebdbd;
 }
