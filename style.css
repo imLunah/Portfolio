@@ -8,6 +8,11 @@ html,body { /* Requirement-2.B */
 
 }
 
+.disable-y {
+  overflow-y:hidden;
+}
+
+
 /* Main layout for index page */
 
 nav ul.nav-bar, .logo-bar {
@@ -123,22 +128,45 @@ li a {
 /* about-me page */
 
 #about-container img { /* Requirement-2.F */
-  width:40%;
+  width:100%;
   max-width:400px;
   max-height:600px;
 
 }
 
+.about-text {
+  text-align: center;
+  transform:rotate(-270deg);
+  font-size:20px;
+}
+
+
+
+
 .introduction-text,.life-text,.tools {
   font-size:25px;
 }
 
-#about-container { /* Requirement-2.D */
-  display: flex;
-  flex-direction:row;
-  margin-top:20%;
-  gap:5%;
+.hori {
+  width: 1000px;
+  height: 1000px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform:rotate(-90deg) translateY(50%);
 }
+
+
+
+
+#about-container {
+  margin-top:15%;
+  display:flex;
+  flex-direction: column;
+  gap:500px;  
+
+  
+}
+
 
 
 .landscape-container .image-section, .portraits-container .image-section,.photoshop-container .image-section {
@@ -156,6 +184,7 @@ li a {
 
 .portraits-container img, .landscape-container img, .photoshop-container img {
   width:500px;
+  max-height:700px;
 }
 
 /* .image-section img:active {
